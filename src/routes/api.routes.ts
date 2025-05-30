@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getApiStatus } from '../controllers/api.controllers';
+import { getApiStatus,sendHelloMessage } from '../controllers/api.controllers';
 
 const router = Router();
 
