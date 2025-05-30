@@ -4,6 +4,7 @@ import { getApiStatus } from '../controllers/api.controllers';
 const router = Router();
 
 router.get('/status', getApiStatus);
+router.get('/hello', sendHelloMessage);
 
 
 
