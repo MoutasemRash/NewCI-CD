@@ -10,3 +10,15 @@ describe('API Integration Tests', () => {
         });
     });
 });
+
+
+describe('Hello Message API Integration Tests', () => {
+    it('GET /api/hello should return hello message with 200 status', async () => {
+        const response = await request(app).get('/api/hello');
+
+        expect(response.status).toBe(200);
+        expect(response.body).toEqual({
+            status: 'Hello from api'
+        });
+    });
+})
